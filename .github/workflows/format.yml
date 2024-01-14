@@ -1,0 +1,40 @@
+name: Format
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches:
+      - main
+      - release/*
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  format:
+    name: Format Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go environment
+        uses: actions/setup-go@v5.0.0
+
+      - name: Setup Buildifier
+        run: go install github.com/bazelbuild/buildtools/buildifier@latest
+
+      - name: Format Starlark Files
+        run: buildifier -r ./
+
+      - name: Format C++ Code
+        run: find ./src -iname *.cc -or -iname *.cpp -or -iname *.h -or -iname *.hpp | xargs clang-format -i -style=file
+
+      - name: Check Diff
+        run: git diff --exit-code

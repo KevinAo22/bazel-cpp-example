@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "BazelBuild.vscode-bazel",
+    "editorconfig.editorconfig",
+    "ms-vscode.cpptools",
+  ]
+}
