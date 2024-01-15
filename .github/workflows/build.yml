@@ -16,7 +16,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  build-windows:
     name: Build on Windows
     runs-on: windows-latest
 
@@ -26,3 +26,14 @@ jobs:
 
       - name: Build
         run: bazel build --config=debug --config=windows //src/apps/windows:example
+
+  build-macos:
+    name: Build on macOS
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: bazel build --config=debug --config=macos //src/apps/macos:example

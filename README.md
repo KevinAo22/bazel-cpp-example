@@ -8,7 +8,7 @@ An example C++ repository based on Bazel, using GitHub Actions and common develo
 
 [x] Windows
 
-[ ] macOS
+[x] macOS
 
 [ ] Linux
 
