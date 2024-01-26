@@ -37,3 +37,14 @@ jobs:
 
       - name: Build
         run: bazel build --config=debug --config=macos //src/apps/macos:example
+
+  build-linux:
+    name: Build on Linux
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: bazel build --config=debug --config=linux //src/apps/linux:example

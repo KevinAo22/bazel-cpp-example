@@ -10,11 +10,11 @@ An example C++ repository based on Bazel, using GitHub Actions and common develo
 
 [x] macOS
 
-[ ] Linux
+[x] Linux
 
 ## Supported CI
 
-[ ] GitHub Actions
+[x] GitHub Actions
 
 ## Supported Development Tools
 
