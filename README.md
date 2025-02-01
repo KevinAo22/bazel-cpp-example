@@ -2,7 +2,7 @@
 
 ![Build](https://github.com/KevinAo22/bazel-cpp-example/actions/workflows/build.yml/badge.svg) ![Test](https://github.com/KevinAo22/bazel-cpp-example/actions/workflows/test.yml/badge.svg)
 
-An example C++ repository based on Bazel, using GitHub Actions and common development tools.
+An example of a cross-platform C++ repository based on `Bazel`, and utilizing GitHub Actions along with `googletest` and other tools.
 
 ## Supported OS
 
