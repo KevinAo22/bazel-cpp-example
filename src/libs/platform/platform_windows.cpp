@@ -5,5 +5,5 @@
 #include "platform.h"
 
 void PlatformWindows::PrintHelloWorld() {
-  std::wcout << L"Hello world from Windows." << std::endl;
+   std::wcout << L"Hello world from Windows." << std::endl;
 }

@@ -1,2 +1,5 @@
 Language:        Cpp
 BasedOnStyle:    Google
+
+IndentWidth: 3
+AccessModifierOffset: "-3"

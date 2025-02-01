@@ -1,6 +1,6 @@
 # bazel-cpp-example
 
-![Build](https://github.com/KevinAo22/bazel-cpp-example/actions/workflows/build.yml/badge.svg)
+![Build](https://github.com/KevinAo22/bazel-cpp-example/actions/workflows/build.yml/badge.svg) ![Test](https://github.com/KevinAo22/bazel-cpp-example/actions/workflows/test.yml/badge.svg)
 
 An example C++ repository based on Bazel, using GitHub Actions and common development tools.
 
@@ -18,5 +18,6 @@ An example C++ repository based on Bazel, using GitHub Actions and common develo
 
 ## Supported Development Tools
 
-[ ] GoogleTest
+[x] GoogleTest
+
 [ ] SonarCloud

@@ -5,5 +5,5 @@
 #include "platform.h"
 
 void PlatformLinux::PrintHelloWorld() {
-  std::cout << "Hello world from Linux." << std::endl;
+   std::cout << "Hello world from Linux." << std::endl;
 }
