@@ -12,7 +12,7 @@ An example of a cross-platform C++ repository based on `Bazel`, and utilizing Gi
 
 [x] Linux
 
-## Supported CI
+## Supported CI ecosystems
 
 [x] GitHub Actions
 
@@ -20,4 +20,46 @@ An example of a cross-platform C++ repository based on `Bazel`, and utilizing Gi
 
 [x] GoogleTest
 
+[x] Compilation Database
+
 [ ] SonarCloud
+
+## How to?
+
+### Build
+
+Build the project on different platforms.
+
+```bash
+# Linux - debug mode
+bazel build --config=debug --config=linux //src/apps/linux:example
+
+# Linux - release mode
+bazel build --config=release --config=linux //src/apps/linux:example
+
+# macOS - debug mode
+bazel build --config=debug --config=macos //src/apps/macos:example
+
+# macOS - release mode
+bazel build --config=release --config=macos //src/apps/macos:example
+
+# Windows - debug mode
+bazel build --config=debug --config=windows //src/apps/windows:example
+
+# Windows - release mode
+bazel build --config=release --config=windows //src/apps/windows:example
+```
+
+### Test
+
+Run unit test cases on different platforms.
+
+```bash
+bazel test --test_output=all //src/test/...
+```
+
+### Generate Compilation Database
+
+```bash
+bazel run :refresh_compile_commands
+```

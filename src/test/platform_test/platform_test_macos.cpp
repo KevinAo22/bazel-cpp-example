@@ -6,10 +6,9 @@
  */
 
 #include <gtest/gtest.h>
+#include <macos/platform_macos.h>
 
 #include <memory>
-
-#include "src/libs/platform/platform.h"
 
 class PlatformMacosTest : public ::testing::Test {
 protected:

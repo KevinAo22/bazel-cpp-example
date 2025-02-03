@@ -41,3 +41,5 @@ user.bazelrc
 MODULE.bazel.lock
 
 .vscode/settings.json
+
+compile_commands.json

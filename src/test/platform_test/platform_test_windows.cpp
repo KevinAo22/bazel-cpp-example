@@ -6,10 +6,9 @@
  */
 
 #include <gtest/gtest.h>
+#include <windows/platform_windows.h>
 
 #include <memory>
-
-#include "src/libs/platform/platform.h"
 
 class PlatformWindowsTest : public ::testing::Test {
 protected:

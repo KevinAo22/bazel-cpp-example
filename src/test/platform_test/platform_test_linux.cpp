@@ -6,10 +6,9 @@
  */
 
 #include <gtest/gtest.h>
+#include <linux/platform_linux.h>
 
 #include <memory>
-
-#include "src/libs/platform/platform.h"
 
 class PlatformLinuxTest : public ::testing::Test {
 protected:

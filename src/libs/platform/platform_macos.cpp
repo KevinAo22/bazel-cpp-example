@@ -1,8 +1,8 @@
 // platform_macos.cpp
 
-#include <iostream>
+#include <macos/platform_macos.h>
 
-#include "platform.h"
+#include <iostream>
 
 void PlatformMacos::PrintHelloWorld() {
    std::cout << "Hello world from macOS." << std::endl;

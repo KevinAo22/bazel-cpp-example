@@ -1,8 +1,8 @@
 // platform_linux.cpp
 
-#include <iostream>
+#include <linux/platform_linux.h>
 
-#include "platform.h"
+#include <iostream>
 
 void PlatformLinux::PrintHelloWorld() {
    std::cout << "Hello world from Linux." << std::endl;

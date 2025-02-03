@@ -2,6 +2,7 @@ startup --output_user_root=build --output_base=build/example --max_idle_secs=3
 startup --windows_enable_symlinks
 
 build --enable_runfiles
+build --features=generate_pdb_file
 
 # Enable modern C++ features
 build:windows --cxxopt="/std:c++20"
