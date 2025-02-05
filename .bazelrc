@@ -19,6 +19,12 @@ build:linux --host_cxxopt="-std=c++20"
 ## For Windows
 build:windows --build_tag_filters="common,windows"
 
+build:windows --copt="/Z7"
+build:windows --copt="/utf-8"
+build:windows --copt="/Zc:__cplusplus"
+
+build:windows --linkopt="/DEBUG"
+
 build:debug --compilation_mode=dbg
 
 build:release --compilation_mode=opt
